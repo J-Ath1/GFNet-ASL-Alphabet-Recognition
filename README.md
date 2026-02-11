@@ -70,16 +70,16 @@ Each block contains:
    - Linearly scheduled up to **0.1**
 4. **LayerNorm**
 5. **MLP**
-   - 256 → 1024 (Linear)
+   - 256 -> 1024 (Linear)
    - **GELU**
    - **Dropout:** 0.2
-   - 1024 → 256 (Linear)
+   - 1024 -> 256 (Linear)
    - **Dropout:** 0.2
 
 ### Classification Head
 
 - **LayerNorm**
-- Linear projection: **256 → 28 classes**
+- Linear projection: **256 -> 28 classes**
 
 ---
 
@@ -94,15 +94,15 @@ Each block contains:
 
 ### LR Schedule
 
-- **Linear warmup:** first **5 epochs**, lr ramped from 0 → 1e-3
-- **Cosine annealing:** epochs **5 → 20**, lr decayed from 1e-3 → 0
+- **Linear warmup:** first **5 epochs**, lr ramped from 0 -> 1e-3
+- **Cosine annealing:** epochs **5 -> 20**, lr decayed from 1e-3 -> 0
 
 ### Fine-Tuning (“Polishing” Stage)
 
-- Fine-tuned from ~96% → **100% validation**
+- Fine-tuned from ~96% -> **100% validation**
 - **lr = 1e-4** (10% of initial lr)
 - Weight decay increased:
-  - **1e-6 → 1e-5**
+  - **1e-6 -> 1e-5**
 
 ---
 
