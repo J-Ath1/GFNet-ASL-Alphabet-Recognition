@@ -30,7 +30,7 @@ Figure 1: Structure of the Vision Transformer (Karim et al., n.a)
 
 The dataset used had 28 classes (A-Z, no hand, and 'space' character) of 400x400 RGB images (total of 166,000 total images). The initial step was to reduce image size and convert to greyscale (as we only care about structure + less compute time). Multiple image sizes were tried but 96x96 pixels was the best visual tradeoff as their was enough resolution to distinguish the classes. After this process, it was noticed that many interclass images were borderline identical, so an algorithm was built to remove interclass images with a very low Hamming-distance (less than 2) which effectively removed most duplicates. This severely shrunk the training size to 93,000 images (56% reduction in training size). Most training images then had random jitter, and changes in brightness applied. This was done to increase variability in training data in hope to improve model generalisastion. 
 <p align="center">
-  <img src="images-for-README/model_struct.png" alt="Figure 2: transform_differences.png" />
+  <img src="images-for-README/transform_differences.png" alt="Figure 2: transform_differences.png" />
 </p>
 <p align="center">
 Figure 2: Difference Before and After Transforms
@@ -133,7 +133,7 @@ Each block contains:
       <p>Figure 4: Train and Validation Loss</p>
     </td>
     <td align="center">
-      <img src="images-for-README/val_accuracy.png" alt="Figure 5: Validation Accuracy" />
+      <img src="images-for-README/vall_accuracy.png" alt="Figure 5: Validation Accuracy" />
       <p>Figure 5: Validation Accuracy</p>
     </td>
   </tr>
@@ -163,7 +163,7 @@ To speed up training on A100:
 | Unused training sample | 5600 images | **97%** |
 ---
 <p align="center">
-  <img src="images-for-README/conf_mat.png" alt="Figure 6: Confusion Matrix of Test Data on Trained Model" />
+  <img src="images-for-README/conf_matrix.png" alt="Figure 6: Confusion Matrix of Test Data on Trained Model" />
 </p>
 <p align="center">
 Figure 6: Confusion Matrix of Test Data on Trained Model
