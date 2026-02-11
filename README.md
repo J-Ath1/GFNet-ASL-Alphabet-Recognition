@@ -129,10 +129,6 @@ To speed up training on A100:
 | Unused training sample | 5600 images | **97%** |
 
 ---
-
-## Notes
-
-This README captures the current experimental setup and observed results. If you add scripts/notebooks later, consider extending with:
-- dataset preparation instructions
-- exact command lines / config files
-- checkpoints + reproducibility notes (seed, deterministic flags)
+## References
+<a id="reference1"></a>
+[2] Rao, Y., Zhao, W., Zhu, Z., Zhou, J., & Lu, J. (2023). GFNet: Global filter networks for visual recognition. *IEEE Transactions on Pattern Analysis and Machine Intelligence*, 45(9), 10960-10973. https://doi.org/10.1109/TPAMI.2023.3263824
