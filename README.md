@@ -169,7 +169,11 @@ To speed up training on A100:
 Figure 6: Confusion Matrix of Test Data on Trained Model
 </p>
 ## References
-<a id="reference1"></a>
-[1] Londhe, K. (2021). American Sign Language. Kaggle. https://doi.org/10.34740/KAGGLE/DSV/2184214
-[2] Rao, Y., Zhao, W., Zhu, Z., Zhou, J., & Lu, J. (2023). GFNet: Global filter networks for visual recognition. *IEEE Transactions on Pattern Analysis and Machine Intelligence*, 45(9), 10960-10973. https://doi.org/10.1109/TPAMI.2023.3263824
+
+### Reference 1
+[1] Londhe, K. (2021). *American Sign Language*. Kaggle. https://doi.org/10.34740/KAGGLE/DSV/2184214
+
+### Reference 2
+[2] Rao, Y., Zhao, W., Zhu, Z., Zhou, J., & Lu, J. (2023). GFNet: Global filter networks for visual recognition. *IEEE Transactions on Pattern Analysis and Machine Intelligence*, 45(9), 10960–10973. https://doi.org/10.1109/TPAMI.2023.3263824
+
 
